@@ -1,0 +1,10 @@
+services:
+  car-price-app:
+    build:
+      context: ..
+      dockerfile: app/.Dockerfile
+
+    ports:
+      - "8050:8050"
+
+    restart: unless-stopped
